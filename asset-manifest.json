@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/the-aspirants/static/css/main.75c7d55f.css",
+    "main.js": "/the-aspirants/static/js/main.b64d207b.js",
+    "index.html": "/the-aspirants/index.html",
+    "main.75c7d55f.css.map": "/the-aspirants/static/css/main.75c7d55f.css.map",
+    "main.b64d207b.js.map": "/the-aspirants/static/js/main.b64d207b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75c7d55f.css",
+    "static/js/main.b64d207b.js"
+  ]
+}

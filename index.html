@@ -12,29 +12,103 @@
         margin: 0;
         background: #f9f9f9;
       }
-      .cover-container {
+      header {
         text-align: center;
-        margin: 40px auto;
-        padding: 20px;
+        padding: 40px 20px;
+        background: white;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       }
-      .cover-container h2 {
-        font-size: 24px;
+      header h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+      header p {
+        font-size: 16px;
+        color: #555;
         margin-bottom: 20px;
       }
-      .cover-container img {
-        max-width: 300px;
+      header img {
+        max-width: 250px;
         border-radius: 12px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+      }
+      header .desc {
+        max-width: 700px;
+        margin: auto;
+        text-align: left;
+        font-size: 15px;
+        line-height: 1.6;
+        color: #333;
+      }
+      .work-with-us {
+        background: #fff;
+        margin: 40px auto;
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 700px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+      .work-with-us h2 {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      .footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        color: #777;
+        background: #f1f1f1;
+        margin-top: 40px;
       }
     </style>
   </head>
   <body>
+    <!-- Book Cover Section -->
+    <header>
+      <h1>Upcoming Publication</h1>
+      <p>Presenting our next big release for competitive exam aspirants.</p>
+      <img src="book-cover.jpg" alt="The Untold Indian Economy — Book Cover" />
+      <div class="desc">
+        <h2>The Untold Indian Economy</h2>
+        <p>
+          This upcoming book is designed as a comprehensive resource for Indian Economy, simplifying complex topics into exam-ready content. 
+          It’s tailored for government exam aspirants including SSC, Banking, PCS, CDS, CAPF, and other one-day exams.
+        </p>
+        <p>
+          Authored by <strong>Akash Saini</strong>, the book combines clarity, depth, and exam-oriented preparation strategies.
+        </p>
+        <p><strong>Expected Release:</strong> Coming Soon</p>
+      </div>
+    </header>
+
+    <!-- React App Mount Point -->
     <div id="root"></div>
 
-    <!-- Book Cover Section -->
-    <div class="cover-container">
-      <h2>Upcoming Publication</h2>
-      <img src="book-cover.jpg" alt="Book Cover" />
+    <!-- Work With Us Section -->
+    <div class="work-with-us">
+      <h2>Work with us</h2>
+      <p>
+        Whether you are a school, coaching institute, publisher, or an aspiring student — let's create the right solution for your needs. 
+        Tell us what you're looking for and we'll get back with a tailored plan.
+      </p>
+      <ul>
+        <li>Institutional content packages</li>
+        <li>Book collaborations & co-authorship</li>
+        <li>Custom question banks & mock tests</li>
+      </ul>
+      <form>
+        <label>Name<br><input type="text" placeholder="Your name" /></label><br><br>
+        <label>Email<br><input type="email" placeholder="you@example.com" /></label><br><br>
+        <label>Message<br><textarea placeholder="How can we help?"></textarea></label><br><br>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      © 2025 The Aspirants. All rights reserved. |
+      <a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="#">Contact</a>
     </div>
   </body>
 </html>
